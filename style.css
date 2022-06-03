@@ -1,0 +1,9 @@
+.pages {
+    display: flex;
+    margin: auto;
+}
+
+h1 {
+    justify-content: center;
+    text-align: center;
+}
