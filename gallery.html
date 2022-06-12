@@ -12,8 +12,6 @@
 <style>
     body {
         height: 100vh;
-        justify-content: center;
-        align-items: center;
     }
     img {
         border-radius: 8px;
@@ -26,62 +24,55 @@
         float: left;
         width: 100%;
     }
-    /* .album img {
-        transition: all 0.15s ease;
+    .album img {
+        background-color: #383838;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 12pt;
     }
-    .album input {
-        display: none;
+    .gallery p{
+        width: 440px; 
+        color:beige;
+        background-color: #383838; 
+        border-radius: 20px;
+        padding: 10px;
+        text-align: center;
     }
-    #dots {
-        display: flex;
-        justify-content: center;
-        margin: 4px;
-    }
-    #dots label {
-        border-radius: 50%;
-        border: solid #333 3px;
-        cursor: pointer;
-        transition: all 0.15s ease;
-        margin: 5px;
-    } */
 </style>
 <body>
-    <header style="text-align: center;">
+    <header>
         <h2>Gallery</h2>
-        <nav id="navbar">
-            <ul id="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
+    <nav id="navbar">
+        <ul id="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     
 
     <section class="gallery">
-        <p>Browse our fine collection of nature photographs.</p>
-
+        <center>
+            <p>Feel free to browse our fine collection of nature photographs.</p>
+        </center>
+        
         <!--Desert-->
-        <h4>Desert</h4>
+        <!-- <h3 style="background-color: #383838; color: beige; width: 80px; text-align: center; border-radius: 20px;">Desert</h3> -->
+        <h3>Desert</h3>
         <div class="album">
             <img src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="desert1" alt="desert1">
             <img src="https://images.pexels.com/photos/847402/pexels-photo-847402.jpeg" id="desert2" alt="desert2">
             <img src="https://images.pexels.com/photos/998646/pexels-photo-998646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="desert3" alt="desert3">
             <img src="https://images.pexels.com/photos/3286817/pexels-photo-3286817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="desert4" alt="desert4">
             <img src="https://images.pexels.com/photos/3974145/pexels-photo-3974145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="desert5" alt="desert5">
-            <br>
-            <input type="radio" name="btn" id="desert1" checked>
-            <input type="radio" name="btn" id="desert2">
-            <input type="radio" name="btn" id="desert3">
-            <input type="radio" name="btn" id="desert4">
-            <input type="radio" name="btn" id="desert5">
         </div>
     
         <br>
 
         <!--Mountains-->
-        <h4>Mountains</h4>
+        <h3>Mountains</h3>
         <div class="album">
             <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="mountains1" alt="mountains1">
             <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="mountains2" alt="mountains2">
@@ -92,7 +83,7 @@
         <br>
 
         <!--Tropics-->
-        <h4>Tropics</h4>
+        <h3>Tropics</h3>
         <div class="album">
             <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="tropics1" alt="tropics1">
             <img src="https://images.pexels.com/photos/3233371/pexels-photo-3233371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="tropics2" alt="tropics2">
@@ -103,7 +94,7 @@
         <br>
 
         <!--Forests-->
-        <h4>Forests</h4>
+        <h3>Forests</h3>
         <div class="album">
             <img src="https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="forests1" alt="forests1">
             <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="forests2" alt="forests2">

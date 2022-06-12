@@ -7,21 +7,56 @@
     <title>About | Nature Photography</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
+        .container {
+            justify-content: center;
+            text-align: center;
+            background-color: #383838;
+            color:beige;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 12pt;
+        }
+        .container a{
+            text-decoration: none;
+            text-decoration-color: aqua;
+        }
+        .container a:hover{
+            text-decoration: none;
+            text-decoration-color: aqua;
+        }
+        .container #about-image img{
+            width: 100%;
+            border-radius: 20px;
+            background-repeat: no-repeat;
+            background-size:100%;
+            background-attachment: fixed;
+        }
+        .container #info a{
+            color:aqua;
+        }
+        .container #info a:visited{
+            color:rgb(211, 144, 211);
+        }
     </style>
 </head>
 <body>
     <header>
-        <h2>About</h2>
-        <nav id="navbar">
-            <ul id="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
+        <h2>About Us</h2>
     </header>
 
+
+    <nav id="navbar">
+        <ul id="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
+        <div id="about-image">
+            <img src="images/IMG_8888.JPG" alt="About page image">
+        </div>
         <div id="info">
             <p>This is a website that contains galleries for photographs of different natural environments. All of the images found on our site are royalty-free and free to use in any way you see fit.</p>
             <p>For any questions or concerns, feel free to <a href="contact.html">contact us</a>.</p>

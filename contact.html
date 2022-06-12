@@ -18,9 +18,10 @@
             color:beige;
             padding: 10px;
             border-radius: 20px;
+            font-size: 12pt;
         }
         .contact-form #input-field {
-            width: 400px;
+            width: 80%;
             height: 20px;
             margin: 10px;
             padding: 10px;
@@ -29,15 +30,17 @@
         }
         .contact-form #input-field-message {
             height: 200px;
-            width: 400px;
+            /* width: 400px; */
+            width: 80%;
             margin: 10px;
             padding: 10px;
             border-radius: 20px;
         }
         button {
-            width: 100px;
+            width: 30%;
             height: 50px;
             border-radius: 20px;
+            font-size: 12pt;
             border-style: none;
             background-color: #47c35a;
             cursor: pointer;
@@ -50,16 +53,17 @@
 <body>
     <header>
         <h2>Contact Us</h2>
-        <nav id="navbar">
-            <ul id="navbar-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
     </header>
+    <nav id="navbar">
+        <ul id="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
-        <p>Feel free to reach out to us with any questions or concerns.</p>
+        <p style="margin: 4px;">Feel free to reach out to us with any questions or concerns.</p>
         <div class="contact-form">
             <form>
                     <input type="text" id="input-field" placeholder="Name" />
