@@ -7,10 +7,6 @@
     <title>Nature Photography</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* .birds-eye-view {
-            background-image: url("birdseyeview/IMG_9890.JPG");
-            background-repeat: no-repeat;
-        } */
         body {
             background: linear-gradient(0deg, rgba(171,126,72,1) 0%, rgba(173,117,58,1) 14%, rgba(181,86,6,1) 100%)
         }
@@ -18,12 +14,19 @@
             justify-content: center;
             text-align: center;
             background-color: #383838;
-            color:beige;
+            color: #f5f5dc;
             padding: 10px;
-            border-radius: 20px;
             font-size: 12pt;
-
             align-self: auto;
+        }
+        #birds-eye-view img {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100vw;
+            background-attachment: fixed;
+        }
+        .container #info, #birds-eye-view img {
+            border-radius: 20px;
         }
     </style>
 </head>
@@ -43,12 +46,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div class="birds-eye-view" style="background-color: #383838; border-radius: 20px; padding: 20px;">
-        <!-- style for the background image; added a background with a 20px radius and 20px padding -->
-        <img style="width: 100%; background-repeat: no-repeat; background-size:100vw; background-attachment: fixed; border-radius: 20px;"
-            src="images/IMG_9890.JPG"
-            alt="landing-page-image"
-        >
+    <div id="birds-eye-view" style="background-color: #383838; border-radius: 20px; padding: 20px;">
+        <img src="images/IMG_9890.JPG" alt="landing-page-image">
     </div>
   
     <div id="info">

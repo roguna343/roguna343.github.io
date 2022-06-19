@@ -1,11 +1,9 @@
 * {
-    padding: 0;
     margin: 5px;
     position: relative;
     font-family: "Montserrat", sans-serif;
 }
 body {
-    /* background: linear-gradient(#e66465, #9198e5); */
     /* adds a linear gradient background for each page */
     background: linear-gradient(0deg, rgba(159,177,154,1) 13%, rgba(224,148,49,1) 100%);
 }
@@ -16,45 +14,45 @@ body {
     display: flex;
     justify-content: space-around;
 }
-#navbar ul {
+
+#navbar > ul {
     list-style: none;
     display: flex
 }
-#navbar li {
-    display: inline-block;
+
+#navbar > ul > li {
+    display: flex;
     justify-content: center;
 }
+
 /* used for the links in the navbar */
-#navbar a{
-    /* background-color: rgb(136, 129, 129); */
-    background-color: #383838;
-    color: beige; /* rgb(245,245,220) */
-    padding: 0;
-    border-style: hidden;
-    text-align: center;
+#navbar > ul > li > a{
     text-decoration: none;
     padding: 5px;
     display: block;
-    border-radius: 20px;
-    width: 80px;
+    width: 60px;
     font-size: 15px;
 }
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
 }
-h2{
-    background-color: #383838;
-    color: beige;
-    padding: 15px;
-    border-style: hidden;
-    border-radius: 20px;
+header > h2 {
+    padding: 8px;
     font-size: 32pt;
-    text-align: center;
     width: auto;
 }
+
+header > h2, #navbar > ul > li > a {
+    background-color: #383838;
+    color: #f5f5dc;
+    border-style: hidden;
+    border-radius: 20px;
+    text-align: center;
+} 
 footer {
     padding: 5px;
     text-align: center;

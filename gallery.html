@@ -7,7 +7,6 @@
     <title>Gallery | Nature Photography</title>
     <link rel="stylesheet" href="style.css">
 
-    
 </head>
 <style>
     body {
@@ -16,59 +15,41 @@
     .gallery {
         margin: 20px;
         justify-content: center;
-        
-    }
-    .gallery p{
-        width: fit-content; 
-        color:beige;
-        background-color: #383838; 
-        border-radius: 20px;
-        padding: 10px;
-        text-align: center;
     }
     .gallery h4 {
-        display: block;
-        text-align: center;
-        border-radius: 20px;
         padding: 8px;
-        color: beige;
-        background-color: #383838; 
+    }
+    .gallery p, h4 {
         width: fit-content;
+        background-color: #383838;
+        color: #f5f5dc;
+        border-radius: 20px;
+        text-align: center;
     }
     /* used for each photo gallery */
-    .gallery .album {
-        align-items:center;
+    .gallery #album {
+        display: flex;
+        align-items: center;
         width: fit-content;
         height: auto;
-        display: flex;
         position: relative;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         justify-content: center;
     }
     /* applied to each image in each gallery */
-    .gallery .album img{
+    .gallery #album img{
         background-color: #383838;
         padding: 10px;
         border-radius: 20px;
         font-size: 12pt;
         margin: 4px;
-        width: 30%;
-        height: 30%;
+        width: 35%;
+        height: 35%;
         opacity: 1;
-
     }
-    .album img:hover {
+    .gallery #album img:hover {
         opacity: 0.8;
     }
-    /* #album-photo {
-        align-items: center;
-        position: relative;
-        background-color: #383838;
-        padding: 10px;
-        border-radius: 20px;
-        width: 20%;
-        height: 20%;
-    } */
 </style>
 <body>
     <header>
@@ -83,46 +64,30 @@
         </ul>
     </nav>
 
-    <!-- <script>
-        function setImageBackground(image) {
-            // expaned image
-            var expandedPhoto = document.getElementById("expanded-photo");
-            expandedPhoto.src = image.src;
-            expandedPhoto.alt = image.alt;
-            expandedPhoto.parentElement.style.display = "block";
-        }
-    </script> -->
-    
-
     <div class="gallery">
         <center>
-            <p>Feel free to browse our collection of nature photographs.</p>
+            <p style="padding: 10px;">Feel free to browse our collection of nature photographs.</p>
         </center>
         <br>
+
         <!--Desert-->
         <center>
             <h4>Desert</h4>
         </center>
-
-        <!-- <div id="album-photo">
-            <img id="expanded-photo" style="width:100%;">
-        </div> -->
-
-        <div class="album">
+        <div id="album">
             <img src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="desert1" alt="desert1">
             <img src="https://images.pexels.com/photos/847402/pexels-photo-847402.jpeg" id="desert2" alt="desert2">
             <img src="https://images.pexels.com/photos/998646/pexels-photo-998646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="desert3" alt="desert3">
             <img src="https://images.pexels.com/photos/3286817/pexels-photo-3286817.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="desert4" alt="desert4">
             <img src="https://images.pexels.com/photos/3974145/pexels-photo-3974145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="desert5" alt="desert5">
         </div>
-    
         <br>
 
         <!--Mountains-->
         <center>
             <h4>Mountains</h4>
         </center>
-        <div class="album">
+        <div id="album">
             <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="mountains1" alt="mountains1">
             <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="mountains2" alt="mountains2">
             <img src="https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="mountains3" alt="mountains3">
@@ -135,7 +100,7 @@
         <center>
             <h4>Tropics</h4>
         </center>
-        <div class="album">
+        <div id="album">
             <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="tropics1" alt="tropics1">
             <img src="https://images.pexels.com/photos/3233371/pexels-photo-3233371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="tropics2" alt="tropics2">
             <img src="https://images.pexels.com/photos/1998439/pexels-photo-1998439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="tropics3" alt="tropics3">
@@ -148,7 +113,7 @@
         <center>
             <h4>Forests</h4>
         </center>
-        <div class="album">
+        <div id="album">
             <img src="https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="forests1" alt="forests1">
             <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="forests2" alt="forests2">
             <img src="https://images.pexels.com/photos/460621/pexels-photo-460621.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="forests3" alt="forests3">
