@@ -15,6 +15,7 @@
     }
     .gallery {
         margin: 20px;
+        justify-content: center;
         
     }
     .gallery p{
@@ -35,23 +36,26 @@
         width: fit-content;
     }
     /* used for each photo gallery */
-    .album {
+    .gallery .album {
         align-items:center;
-        width: 80%;
+        width: 80vw;
         height: auto;
         display: flex;
         position: relative;
+        flex-wrap:wrap;
+        justify-content: center;
     }
     /* applied to each image in each gallery */
-    .album img{
+    .gallery .album img{
         background-color: #383838;
         padding: 10px;
         border-radius: 20px;
         font-size: 12pt;
         margin: 4px;
-        width: 35%;
-        height: 35%;
+        width: 30%;
+        height: 30%;
         opacity: 1;
+
     }
     .album img:hover {
         opacity: 0.8;
