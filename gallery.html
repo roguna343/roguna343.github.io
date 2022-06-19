@@ -13,21 +13,9 @@
     body {
         height: 100vh;
     }
-    /* used for each photo gallery */
-    .album {
-        justify-content: space-evenly;
-        float: left;
-        width: 100%;
-    }
-    /* applied to each image in each gallery */
-    .album img {
-        background-color: #383838;
-        padding: 10px;
-        border-radius: 20px;
-        font-size: 12pt;
-        margin: 4px;
-        width: 25%;
-        height: 25%;
+    .gallery {
+        margin: 20px;
+        
     }
     .gallery p{
         width: 30vw; 
@@ -37,6 +25,46 @@
         padding: 10px;
         text-align: center;
     }
+    .gallery h4 {
+        display: block;
+        text-align: center;
+        border-radius: 20px;
+        padding: 8px;
+        color: beige;
+        background-color: #383838; 
+        width: fit-content;
+    }
+    /* used for each photo gallery */
+    .album {
+        align-items:center;
+        width: 80%;
+        height: auto;
+        display: flex;
+        position: relative;
+    }
+    /* applied to each image in each gallery */
+    .album img{
+        background-color: #383838;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 12pt;
+        margin: 4px;
+        width: 35%;
+        height: 35%;
+        opacity: 1;
+    }
+    .album img:hover {
+        opacity: 0.8;
+    }
+    /* #album-photo {
+        align-items: center;
+        position: relative;
+        background-color: #383838;
+        padding: 10px;
+        border-radius: 20px;
+        width: 20%;
+        height: 20%;
+    } */
 </style>
 <body>
     <header>
@@ -50,16 +78,32 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- <script>
+        function setImageBackground(image) {
+            // expaned image
+            var expandedPhoto = document.getElementById("expanded-photo");
+            expandedPhoto.src = image.src;
+            expandedPhoto.alt = image.alt;
+            expandedPhoto.parentElement.style.display = "block";
+        }
+    </script> -->
     
 
-    <section class="gallery">
+    <div class="gallery">
         <center>
             <p>Feel free to browse our collection of nature photographs.</p>
         </center>
-        
+        <br>
         <!--Desert-->
-        <!-- <h3 style="background-color: #383838; color: beige; width: 80px; text-align: center; border-radius: 20px;">Desert</h3> -->
-        <h3>Desert</h3>
+        <center>
+            <h4>Desert</h4>
+        </center>
+
+        <!-- <div id="album-photo">
+            <img id="expanded-photo" style="width:100%;">
+        </div> -->
+
         <div class="album">
             <img src="https://images.pexels.com/photos/2245436/pexels-photo-2245436.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="desert1" alt="desert1">
             <img src="https://images.pexels.com/photos/847402/pexels-photo-847402.jpeg" id="desert2" alt="desert2">
@@ -71,7 +115,9 @@
         <br>
 
         <!--Mountains-->
-        <h3>Mountains</h3>
+        <center>
+            <h4>Mountains</h4>
+        </center>
         <div class="album">
             <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="mountains1" alt="mountains1">
             <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="mountains2" alt="mountains2">
@@ -82,7 +128,9 @@
         <br>
 
         <!--Tropics-->
-        <h3>Tropics</h3>
+        <center>
+            <h4>Tropics</h4>
+        </center>
         <div class="album">
             <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="tropics1" alt="tropics1">
             <img src="https://images.pexels.com/photos/3233371/pexels-photo-3233371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="tropics2" alt="tropics2">
@@ -93,7 +141,9 @@
         <br>
 
         <!--Forests-->
-        <h3>Forests</h3>
+        <center>
+            <h4>Forests</h4>
+        </center>
         <div class="album">
             <img src="https://images.pexels.com/photos/113338/pexels-photo-113338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="forests1" alt="forests1">
             <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="forests2" alt="forests2">
@@ -103,7 +153,7 @@
         </div>
         <br>
         
-    </section>
+    </div>
 
     <footer>
         <p>&copy; 2022 Rawlings Oguna</p>
